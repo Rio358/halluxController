@@ -17,7 +17,7 @@ NumPad 8 - Extra 11
 NumPad 9 - Extra 12
 
 # Important
-By downloading this resource, you agree to the Terms of Service put forth by the [Cfx.re (FiveM / RedM)](https://fivem.net/terms).  
+By downloading this resource, you agree to the Terms of Service put forth by the [Cfx.re (FiveM / RedM)](https://fivem.net/terms) specifically Term 8. Additionally, you agree not to sell or redistribute this without written permission. 
 
 ## Credit
 InteractionSound by Scott
