@@ -123,43 +123,47 @@ Citizen.CreateThread(function()
     while true do
         Wait(0)
 		if IsPedInAnyVehicle(ped, true) then
-			DrawRect(0.085, 0.78, 0.140, 0.030, 0, 0, 0, 150)
-	        if not mainOn then
-	            DrawAdvancedText(0.120, 0.785, 0.005, 0.0028, 0.3, "Main", 0, 255, 0, 255, 6, 0)
-	        else
-	            DrawAdvancedText(0.120, 0.785, 0.005, 0.0028, 0.3, "Main", 255, 0, 0, 255, 6, 0)
-	        end
+			if GetVehicleClass(GetVehiclePedIsIn(PlayerPedId(),false)) == 18 then
+				DrawRect(0.085, 0.78, 0.140, 0.030, 0, 0, 0, 150)
+				if not mainOn then
+					DrawAdvancedText(0.120, 0.785, 0.005, 0.0028, 0.3, "Main", 0, 255, 0, 255, 6, 0)
+				else
+					DrawAdvancedText(0.120, 0.785, 0.005, 0.0028, 0.3, "Main", 255, 0, 0, 255, 6, 0)
+				end
 
-	        if not secOn then 
-	        	DrawAdvancedText(0.143, 0.785, 0.005, 0.0028, 0.3, "Secondary", 0, 255, 0, 255, 6, 0)
-	        else
-	       		DrawAdvancedText(0.143, 0.785, 0.005, 0.0028, 0.3, "Secondary", 255, 0, 0, 255, 6, 0)
-	        end
+				if not secOn then 
+					DrawAdvancedText(0.143, 0.785, 0.005, 0.0028, 0.3, "Secondary", 0, 255, 0, 255, 6, 0)
+				else
+					DrawAdvancedText(0.143, 0.785, 0.005, 0.0028, 0.3, "Secondary", 255, 0, 0, 255, 6, 0)
+				end
 
-	        if not takeOn then 
-	    		DrawAdvancedText(0.174, 0.785, 0.005, 0.0028, 0.3, "Take Down", 0, 255, 0, 255, 6, 0)
-	        else
-	   			DrawAdvancedText(0.174, 0.785, 0.005, 0.0028, 0.3, "Take Down", 255, 0, 0, 255, 6, 0)
-	        end
+				if not takeOn then 
+					DrawAdvancedText(0.174, 0.785, 0.005, 0.0028, 0.3, "Take Down", 0, 255, 0, 255, 6, 0)
+				else
+					DrawAdvancedText(0.174, 0.785, 0.005, 0.0028, 0.3, "Take Down", 255, 0, 0, 255, 6, 0)
+				end
 
-	        if not steadyOn then 
-	    		DrawAdvancedText(0.202, 0.785, 0.005, 0.0028, 0.3, "Steady", 0, 255, 0, 255, 6, 0)
-	        else
-	   			DrawAdvancedText(0.202, 0.785, 0.005, 0.0028, 0.3, "Steady", 255, 0, 0, 255, 6, 0)
-	        end
+				if not steadyOn then 
+					DrawAdvancedText(0.202, 0.785, 0.005, 0.0028, 0.3, "Steady", 0, 255, 0, 255, 6, 0)
+				else
+					DrawAdvancedText(0.202, 0.785, 0.005, 0.0028, 0.3, "Steady", 255, 0, 0, 255, 6, 0)
+				end
 
-	        if not warnOn then 
-	    		DrawAdvancedText(0.222, 0.785, 0.005, 0.0028, 0.3, "Warn", 0, 255, 0, 255, 6, 0)
-	        else
-	   			DrawAdvancedText(0.222, 0.785, 0.005, 0.0028, 0.3, "Warn", 255, 0, 0, 255, 6, 0)
-	        end
+				if not warnOn then 
+					DrawAdvancedText(0.222, 0.785, 0.005, 0.0028, 0.3, "Warn", 0, 255, 0, 255, 6, 0)
+				else
+					DrawAdvancedText(0.222, 0.785, 0.005, 0.0028, 0.3, "Warn", 255, 0, 0, 255, 6, 0)
+				end
 
-	        if not alleyOn then 
-	    		DrawAdvancedText(0.240, 0.785, 0.005, 0.0028, 0.3, "Alley", 0, 255, 0, 255, 6, 0)
-	        else
-	   			DrawAdvancedText(0.240, 0.785, 0.005, 0.0028, 0.3, "Alley", 255, 0, 0, 255, 6, 0)
-	        end
-	    end
+				if not alleyOn then 
+					DrawAdvancedText(0.240, 0.785, 0.005, 0.0028, 0.3, "Alley", 0, 255, 0, 255, 6, 0)
+				else
+					DrawAdvancedText(0.240, 0.785, 0.005, 0.0028, 0.3, "Alley", 255, 0, 0, 255, 6, 0)
+				end
+			end
+	    else
+			Citizen.Wait(2500)
+		end
     end
 end)
 
