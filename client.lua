@@ -123,7 +123,7 @@ Citizen.CreateThread(function()
     while true do
         Wait(0)
 		if IsPedInAnyVehicle(ped, true) then
-			if GetVehicleClass(GetVehiclePedIsIn(PlayerPedId(),false)) == 18 then
+			if GetVehicleClass(GetVehiclePedIsIn(ped,false)) == 18 then
 				DrawRect(0.085, 0.78, 0.140, 0.030, 0, 0, 0, 150)
 				if not mainOn then
 					DrawAdvancedText(0.120, 0.785, 0.005, 0.0028, 0.3, "Main", 0, 255, 0, 255, 6, 0)
